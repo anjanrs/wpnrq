@@ -1,0 +1,12 @@
+@mixin content-text-common() {
+    @media screen and (min-width: $break-medium) {
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: $break-medium) {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 40px;
+    }
+}

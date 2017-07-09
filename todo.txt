@@ -1,0 +1,7 @@
+css refinments
+remove margin at the top of the page
+menu css refinments/mobile menu as well
+content text refinements
+make sure upload folder is there and is writable
+may occur problem of file upload
+change page titles

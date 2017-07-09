@@ -1,0 +1,247 @@
+@import 'variables';
+@import 'fontface';
+@import 'mixin';
+@import 'common';
+@import 'menu';
+
+@media screen and (min-width: $break-medium+1) {
+    .content-left {
+        width: 160px;
+        height: 100%;
+        display: table;
+        float:left;
+    }
+    .content-area {
+        padding-left: 160px;
+    }
+    .content-mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $break-medium) {
+    .content-left {
+        display: none;
+    }
+    .content-area {
+        width: 100% !important;
+        margin-top: 65px;
+    }
+    .content-mobile-menu {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        // padding: 10px;
+        background-color: #fff;
+        z-index:100;
+        .mobile-menu-icon {
+            float: right;
+            cursor: pointer;
+            img {
+                height: 65px;
+                padding-right: 10px;
+            }
+        }
+        .mobile-menu {
+            display: none;
+            width: 200px;
+            position: fixed;
+            right: 0;
+            background-color: #fff;
+            border-bottom-left-radius: 4px;
+            top: 65px;
+            border: 1px solid #efefef;
+            ul {
+                list-style: none;
+                padding: 0px 10px 0px 30px;
+                li {
+                    padding-top:25px;
+                    font-size: 13px;
+                    a { 
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        position: relative;
+                        line-height:2;
+                        letter-spacing: 2px;
+                        padding-bottom: 5px;
+                        cursor: pointer;
+                        font-family: $link-font;
+                        color: #999;
+                        font-weight: normal;
+                        border-bottom: 1px solid #999;
+                        letter-spacing: 2px;
+                        display: inherit;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.content-left-wrapper {
+    width: 160px;
+    margin-top: 30px;
+    .logo {
+        width: 160px;
+        top: 30px;
+        text-align: center;
+        position:fixed;
+        
+    }
+
+    .main-menu {
+        top: 250px;
+        position:fixed;
+        width: 160px;
+        ul {
+            list-style: none;
+            padding: 0px 10px 0px 30px;
+            li {
+                padding-top:25px;
+                font-size: 13px;
+                a { 
+                    @extend .link-common;
+                    color: #999;
+                    font-weight: normal;
+                    border-bottom: 1px solid #999;
+                    letter-spacing: 2px;
+                    display: inherit;
+                }
+            }
+            
+        }
+    }
+}
+
+.content-area {
+    section {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+    }
+    .pink-text {
+        color: $color-pink;
+    }
+    .section-intro,
+    .section-feedback,
+    .section-stayintouch {
+        @extend .section-common;
+        background-color: #efefef;
+        .sign-up-form {
+            margin-top: 2rem;
+            input {
+                padding: 20px;
+            }
+        }
+    }
+
+    
+    .section-whatwedo {
+        @extend .section-common;
+        // background-color: #efefef;
+    }
+    .section-create-fun {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:#8fabea;
+        .create-fun-wrapper {
+            padding: 3rem;
+            font-family: $heading-font;
+            text-align: left;
+            color:$color-white;
+            line-height: 1;
+            .create-fun-heading {
+                font-size: responsive 20px 60px;
+                font-weight: bold;
+                padding-bottom: 3rem;
+            }
+            .create-fun-text {
+                line-height: 1.5;
+                font-size: responsive 16px 18px;
+                padding-bottom: 3rem;
+            }
+            .create-fun-link {
+                a {
+                    @extend .link-common;
+                    border-bottom: 2px solid $color-white;
+                    color:$color-white;
+                }
+            }
+        }
+        
+    }
+
+    .section-whatwedo-work {
+        .work-item {
+            padding-bottom: 5rem;
+            img {
+                margin-bottom: 2rem;
+            }
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color;
+                font-weight: bold;
+            }
+        }
+    }
+    .content-heading-small {
+        @extend .content-common;
+        font-size: responsive 16px 25px;
+        line-height: 1.5;
+    }
+    .content-heading {
+        @extend .content-common;
+        font-size: responsive 40px 60px;
+        line-height: 1;
+    }
+
+    .content-text {
+        @extend .content-common;
+        font-size: responsive 16px 22px;
+        line-height: 1.5;
+        font-family: $text-font !important;
+        color: $text-color !important;
+    }
+    // .content-link:before {
+    //     background-color: #000000;
+    //     height: 2px;
+    //     width: 100%;
+    //     content: '';
+    //     position: absolute;
+    //     bottom: -6px;
+    // }
+    .content-link {
+        @extend .link-common;
+        border-bottom: 2px solid $color;
+        color: $color;
+    }
+
+    .section-banner-last {
+        img {
+            width: 100%;
+        }
+    }
+
+    .section-footer {
+        @extend .section-common;
+        background-color: #1a191f;
+        // background-color:#494949;
+        .partners {
+            padding: 10px;
+        }
+        hr {
+            height: 1px;
+            border-top: 1px solid #494949;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .copyright {
+            font-family: $text-font;
+            color:#979797;
+        }
+    }
+}
