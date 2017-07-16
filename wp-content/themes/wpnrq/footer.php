@@ -13,12 +13,12 @@
 		<section class="section-footer">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12">
-					<img src="<?php echo(get_template_directory_uri());?>/assets/img/s1.png"/>
-					<img src="<?php echo(get_template_directory_uri());?>/assets/img/s2.png"/>
-					<img src="<?php echo(get_template_directory_uri());?>/assets/img/s3.png"/>
-					<img src="<?php echo(get_template_directory_uri());?>/assets/img/s4.png"/>
-					<img src="<?php echo(get_template_directory_uri());?>/assets/img/s5.png"/>
+					<div class="col-xs-12 social-links">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-slideshare" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="row">

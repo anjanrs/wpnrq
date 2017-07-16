@@ -27,15 +27,6 @@
           <img src="<?php echo(get_template_directory_uri());?>/assets/img/menumobile.png">
         </div>
         <div class="mobile-menu">
-           <!--<ul>
-              <li><a href="#">about us<span rel="ABOUT US"></span></a></li>
-              <li><a href="#">work<span rel="WORK"></span></a></li>
-              <li><a href="#">SERVICES<span rel="SERVICES"></span></a></li>
-              <li><a href="#">blog<span rel="BLOG"></span></a></li>
-              <li><a href="#">research<span rel="RESEARCH"></span></a></li>
-              <li><a href="#">careers<span rel="CAREERS"></span></a></li>
-              <li><a href="#">contact us<span rel="contact us"></span></a></li>
-            </ul>-->
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -54,19 +45,11 @@
             <a href="/"><img src="<?php echo(get_template_directory_uri());?>/assets/img/logo.png"/></a>
           </div>
           <div class="main-menu">
-            <!--<ul>
-              <li><a href="#">about us<span rel="ABOUT US"></span></a></li>
-              <li><a href="#">work<span rel="WORK"></span></a></li>
-              <li><a href="#">SERVICES<span rel="SERVICES"></span></a></li>
-              <li><a href="#">blog<span rel="BLOG"></span></a></li>
-              <li><a href="#">research<span rel="RESEARCH"></span></a></li>
-              <li><a href="#">careers<span rel="CAREERS"></span></a></li>
-              <li><a href="#">contact us<span rel="contact us"></span></a></li>
-            </ul>-->
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
+          'walker' => new Custom_Nav_Walker_Menu()
 				) );
 			?>
           </div>

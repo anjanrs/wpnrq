@@ -1,0 +1,81 @@
+ .section-slider-left {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // background-color:#8fabea;
+    animation-duration: 3s !important;
+    transition: 3s;
+    opacity: 0;
+    padding: 0px !important;
+    img {
+        width: 100%;
+    }
+    .slider-left-row {
+        display: flex;
+        .slider-left-column{
+            display: flex;
+        }
+    }
+    
+    .slider-left-wrapper {
+        margin: auto;
+        padding: 4rem;
+       
+        // padding: 5rem;
+        @media screen and (min-width: 1480px) {
+            margin: auto;
+            padding: 10rem;
+        }
+        text-align: left;
+        line-height: 1;
+        .slider-left-heading {
+            font-family: $heading-font;
+            color:$heading-color;
+            font-size: responsive 20px 60px;
+            // font-size: calc(20px + 40 * ((50vw - 420px)/ 860));
+            font-weight: bold;
+            padding-bottom: 3rem;
+            @media screen and (max-width: $break-xlarge) and (min-width: $break-large) {
+                font-size: 35px;
+            }
+        }
+        .slider-left-text {
+            line-height: 1.5;
+            font-size: responsive 16px 18px;
+            padding-bottom: 3rem;
+            font-family: $text-font;
+            color:#999;
+            @media screen and (max-width: $break-xlarge) and (min-width: $break-large) {
+                font-size: 14px;
+            }
+        }
+        .slider-left-link {
+            a {
+                @extend .link-common;
+                border-bottom: 2px solid $color;
+                color:$color;
+                @media screen and (max-width: $break-xlarge) and (min-width: $break-large) {
+                    font-size: 12px;
+                }
+            }
+        }
+        .slider-left-points {
+            display: flex;
+            padding-bottom: 3rem;
+            ul {
+                margin: 0px;
+                padding: 0px;
+                padding-left: 17px;
+                width: 50%;
+                float: left;
+                font-size: responsive 14px 16px;
+                li {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.section-slider-left-loaded {
+    opacity: 1;
+}

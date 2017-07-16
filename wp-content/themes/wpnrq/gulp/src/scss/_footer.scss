@@ -1,0 +1,46 @@
+
+.content-area {
+    .section-footer {
+        @extend .section-common;
+        background-color: #1a191f;
+        // background-color:#494949;
+        .partners {
+            padding: 10px;
+        }
+        hr {
+            height: 1px;
+            border-top: 1px solid #494949;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .copyright {
+            font-family: $text-font;
+            color:#979797;
+        }
+        .social-links {
+            a {
+                display: inline-block;
+                position: relative;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                border: 1px solid #3f4046;
+                margin: 0 10px;
+                
+            }
+            .fa {
+                color: #fff;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 25px;
+                transition: color 0.5s linear;
+            }
+            .fa:hover {
+                color: #ff2f92;
+            }
+        }
+    }
+}
+    

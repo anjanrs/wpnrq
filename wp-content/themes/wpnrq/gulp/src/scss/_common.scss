@@ -2,6 +2,8 @@ html, body {
     height: 100%;
 }
 
+
+
 .content-common {
     font-family: $heading-font;
     font-weight: normal;
@@ -44,4 +46,9 @@ html, body {
 .no-gutter {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
 }

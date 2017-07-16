@@ -1,0 +1,24 @@
+{
+  "name": "wptest",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Anjan Raj Shakya <anjanrajshakya@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.5.2",
+    "components-font-awesome": "~4.7.0",
+    "jquery-mousewheel": "~3.1.13"
+  }
+}

@@ -3,6 +3,10 @@
 @import 'mixin';
 @import 'common';
 @import 'menu';
+@import 'vslider';
+@import 'sliderleft';
+@import 'infosection';
+@import 'footer';
 
 @media screen and (min-width: $break-medium+1) {
     .content-left {
@@ -146,6 +150,7 @@
     .section-create-fun {
         padding-top: 20px;
         padding-bottom: 20px;
+        background-color:#8fabea;
         background-color:#64B5EA;
         .create-fun-wrapper {
             padding: 3rem;
@@ -224,24 +229,24 @@
         img {
             width: 100%;
         }
-    }
+    }  
+}
 
-    .section-footer {
-        @extend .section-common;
-        background-color: #1a191f;
-        // background-color:#494949;
-        .partners {
-            padding: 10px;
-        }
-        hr {
-            height: 1px;
-            border-top: 1px solid #494949;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        .copyright {
-            font-family: $text-font;
-            color:#979797;
-        }
-    }
+.link {
+    padding: 9px 0 5px;
+}
+.link:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    transition:  0.6s;
+    background: #000;
+    padding-top: 2px;
+}
+
+.link-hover:before {
+    top: 0;
 }
