@@ -12,6 +12,7 @@
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+<script src="https://cdn.optimizely.com/js/8554830379.js"></script>
 <title>Wordpress Test Project</title>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
